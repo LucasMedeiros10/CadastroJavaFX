@@ -11,6 +11,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import ch.makery.address.model.Person;
+import ch.makery.address.view.PersonOverviewController;
 
 public class MainApp extends Application {
 
@@ -91,6 +92,11 @@ public class MainApp extends Application {
 
             // Define o person overview dentro do root layout.
             rootLayout.setCenter(personOverview);
+            
+            // Dá ao controlador acesso à the main app.
+            PersonOverviewController controller = loader.getController();
+            controller.setMainApp(this);
+            
         } catch (IOException e) {
             e.printStackTrace();
         }
