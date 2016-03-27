@@ -21,14 +21,14 @@
 		<mkdir dir="externalLibs" />
 	
 		<copy todir="externalLibs">
-			<fileset dir="C:\Users\LucasM\workspace\CadastroJavaFX\lib">
+			<fileset dir="C:\Users\LucasM\git\CadastroJavaFX\lib">
 				<filename name="controlsfx-8.0.6_20.jar"/>
 			</fileset>
 		</copy>
 	
 		<mkdir dir="project" />
 		<copy todir="project">
-			<fileset dir="C:\Users\LucasM\workspace\CadastroJavaFX">
+			<fileset dir="C:\Users\LucasM\git\CadastroJavaFX">
 				<include name="src/**" />
 			</fileset>
 		</copy>
@@ -95,7 +95,7 @@
 		</fx:resources>
 	
 		<fx:application id="fxApplication"
-			name="AddressApp"
+			name="CadastroJavaFX"
 			mainClass="ch.makery.address.MainApp"
 			version="1.0"
 		/>
@@ -112,7 +112,7 @@
 	
 			<manifest>
 				<attribute name="Implementation-Vendor" value="Lucas Medeiros"/>
-				<attribute name="Implementation-Title" value="AddressApp"/>
+				<attribute name="Implementation-Title" value="CadastroJavaFX"/>
 				<attribute name="Implementation-Version" value="1.0"/>
 				<attribute name="JavaFX-Feature-Proxy" value="None"/>
 			</manifest>
